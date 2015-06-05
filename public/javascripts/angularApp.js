@@ -23,6 +23,6 @@ app.controller('MainCtrl', [
   function($scope, myService){
     $scope.test = 'Hello world!';
      myService.async().then(function(d) {
-      $scope.data = d.checkins;
+      $scope.data = d.checkins.toString();
     });
 }]);
