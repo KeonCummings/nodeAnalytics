@@ -73,7 +73,7 @@ $(document).ready(function() {
 
             series: [{
                 name: 'Speed',
-                data: [50],
+                data: [250],
                 dataLabels: {
                     format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                         ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
@@ -101,7 +101,7 @@ $(document).ready(function() {
 
             series: [{
                 name: 'RPM',
-                data: [100],
+                data: [50],
                 dataLabels: {
                     format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                         ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +

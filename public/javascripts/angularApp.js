@@ -19,10 +19,14 @@ app.factory('myService', function($http) {
 
 
 app.controller('MainCtrl', [
-'$scope', 'myService',
-  function($scope, myService){
+'$scope', 'myService', '$window',
+  function($scope, myService, $window){
     $scope.test = 'Hello world!';
      myService.async().then(function(d) {
-      $scope.data = d.checkins.toString();
+      $scope.data = d.likes;
+      $window.data = $scope.data;
+      console.log($scope.data)
     });
 }]);
+
+
